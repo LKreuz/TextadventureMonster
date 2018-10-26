@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 public class GamePanelHandler2 {
     private JPanel panel2;
     private JLabel name;
-    private JEditorPane game;
     private JLabel playerName;
     private JLabel power;
     private JLabel playerPower;

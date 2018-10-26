@@ -13,12 +13,14 @@ public class MainController {
     }
 
     public Player createPlayer(String name) {
-        player = new Player(name, 2, 1, "");
+        player = new Player( 2, 1, "");
+        player.setName(name);
         return player;
+
     }
 
     public Monster createMonster(String name) {
-        monster = new Monster(name, 2, 1);
+        monster = new Monster(2, 1);
         return monster;
     }
     public void createFigureHandler(String playerName){

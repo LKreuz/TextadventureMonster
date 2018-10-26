@@ -2,14 +2,14 @@ package Model;
 
 public abstract class Figure {
 
-    private String Name;
-    private int vitality;
-    private int Level;
-    private int fight;
+    protected String Name;
+    protected int vitality;
+    protected int Level;
+    protected int fight;
     protected boolean loaded;
 
-    public Figure(String name, int vitality, int level) {
-        Name = name;
+    public Figure( int vitality, int level) {
+
         this.vitality = vitality;
         Level = level;
         loaded=false;
@@ -18,6 +18,9 @@ public abstract class Figure {
 
     public String getName() {
         return Name;
+    }
+    public void setName(String n){
+        Name=n;
     }
 
     public int getVitality() {

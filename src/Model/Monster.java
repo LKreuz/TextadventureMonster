@@ -3,9 +3,10 @@ package Model;
 public class Monster extends Figure {
     private boolean loaded;
 
-    public Monster(String Name, int Strength, int Level) {
-        super(Name, Strength, Level);
+    public Monster(int Strength, int Level) {
+        super(Strength, Level);
         loaded = false;
+        Name=setMonstername();
 
     }
 
