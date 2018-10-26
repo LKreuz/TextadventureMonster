@@ -27,16 +27,11 @@ public class FigureHandler {
             player.setVitality(player.getVitality()-1);
             monster.setLoaded(false);
         }
-        if(playerAction.equals("shoot")&& player.getLoaded()== false){
+        if(playerAction.equals("shoot")&& player.getLoaded() ){
+            player.setLoaded(false);
 
         }
-        /*if(playerAction.equals( "reload")&& MonsterA.equals("shoot")){
-            player.setVitality(player.getVitality()-1);
-            monster.setLoaded(false);
-        }
-         */
          if (playerAction.equals("reload") && player.getLoaded()== false){
-            System.out.println("ist da");
             player.setLoaded(true);
         }
         System.out.println(MonsterA);

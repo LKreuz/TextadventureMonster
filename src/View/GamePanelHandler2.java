@@ -26,7 +26,7 @@ public class GamePanelHandler2 {
     private MainController mainC;
 
 
-    public GamePanelHandler2(String name, int strength, int level, int monsterPower, MainController mainC){
+    public GamePanelHandler2(String name, int strength,int monsterPower, MainController mainC){
         createButtons();
         this.mainC= mainC;
         playerName.setText(name);
@@ -64,6 +64,10 @@ public class GamePanelHandler2 {
             getMonsterPower.setText(String.valueOf(mainC.getMonsterVitality()));
         }else{
             actionButton.setEnabled(false);
+            playerPower.setText(String.valueOf(mainC.getPlayerVitality()));
+            getloaded.setText(String.valueOf(mainC.getPlayerLoaded()));
+            mLoaded.setText(String.valueOf(mainC.getMonsterLoaded()));
+            getMonsterPower.setText(String.valueOf(mainC.getMonsterVitality()));
 
         }
     }
@@ -79,10 +83,12 @@ public class GamePanelHandler2 {
         updateGame();
         if(mainC.win()==false){
             if (mainC.getPlayerVitality()==0) {
-                gameUpdate.setText(" Game is over you cannot save the princess! The monster wins!");
+                updatePower();
+                gameUpdate.setText(mainC.getPlayerLost());
             }
             if (mainC.getMonsterVitality()==0) {
-                gameUpdate.setText(" Game is over! You save the princess and win!");
+                updatePower();
+                gameUpdate.setText(mainC.getMonsterLost());
             }
         }
 

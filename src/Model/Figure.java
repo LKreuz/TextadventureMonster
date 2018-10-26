@@ -4,14 +4,12 @@ public abstract class Figure {
 
     protected String Name;
     protected int vitality;
-    protected int Level;
     protected int fight;
     protected boolean loaded;
 
-    public Figure( int vitality, int level) {
+    public Figure( int vitality) {
 
         this.vitality = vitality;
-        Level = level;
         loaded=false;
     }
 
@@ -31,14 +29,6 @@ public abstract class Figure {
         this.vitality = vitality;
     }
 
-    public int getLevel() {
-        return Level;
-    }
-
-    public void setLevel(int level) {
-        Level = level;
-    }
-
     public int getFight() {
         return fight;
     }
@@ -56,7 +46,7 @@ public abstract class Figure {
 
     }
 
-    public abstract void lose();
+    public abstract String lose();
 }
 
 

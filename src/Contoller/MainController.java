@@ -13,17 +13,17 @@ public class MainController {
     }
 
     public Player createPlayer(String name) {
-        player = new Player(name, 2, 1);
+        player = new Player( 2);
         return player;
     }
 
-    public Monster createMonster(String name) {
-        monster = new Monster(2, 1);
+    public Monster createMonster() {
+        monster = new Monster( 2);
         return monster;
     }
     public void createFigureHandler(String playerName){
 
-        figureHandler= new FigureHandler(createPlayer(playerName),createMonster("ulf"));
+        figureHandler= new FigureHandler(createPlayer(playerName),createMonster());
     }
 
     public String getPlayerName() {
@@ -34,10 +34,6 @@ public class MainController {
         return player.getVitality();
     }
 
-    public int getPlayerLevel() {
-        return player.getLevel();
-    }
-
     public String getMonsterName() {
         return monster.getName() ;
     }
@@ -45,10 +41,13 @@ public class MainController {
     public int getMonsterVitality() {
         return monster.getVitality();
     }
-
-    public int getMonsterLevel() {
-        return monster.getLevel();
+    public String getMonsterLost(){
+       return  monster.lose();
     }
+    public String getPlayerLost(){
+        return  player.lose();
+    }
+
 
     public boolean getPlayerLoaded(){return player.getLoaded();}
 
@@ -60,11 +59,13 @@ public class MainController {
         figureHandler.handleAction(playerAnswer);
 
     }
+
     public boolean win(){
         if (getMonsterVitality()==0) {
             return false;
         }
         if (getPlayerVitality()==0){
+            player.lose();
             return false;
         }
         return true;

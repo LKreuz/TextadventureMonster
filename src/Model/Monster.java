@@ -3,8 +3,8 @@ package Model;
 public class Monster extends Figure {
     private boolean loaded;
 
-    public Monster(int Strength, int Level) {
-        super(Strength, Level);
+    public Monster(int Strength) {
+        super(Strength);
         loaded = false;
         Name=setMonstername();
 
@@ -62,8 +62,8 @@ public class Monster extends Figure {
     }
 
 
-    public void lose(){
-            System.out.println("Monster lost");
+    public String lose(){
+            return "Monster lost! You win and save the princess";
 
     }
 

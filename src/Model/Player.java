@@ -2,18 +2,22 @@ package Model;
 
 public class Player extends Figure {
 
-
+    private String gender;
     private boolean loaded;
 
-    public Player(String name, int vitality, int level) {
-        super(name,vitality,level);
-
+    public Player( int vitality) {
+        super( vitality);
+        this.gender = gender;
         loaded=false;
     }
 
-
     @Override
-    public void lose() {
-        System.out.println("you lost");
+    public String lose() {
+        return "you lost! The monster wins and keeps the princess";
     }
 }
+
+
+
+
+
