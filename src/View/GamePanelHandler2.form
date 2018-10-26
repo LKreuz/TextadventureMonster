@@ -50,14 +50,14 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="1b5f0" class="javax.swing.JTextField" binding="writeWeitherYouWantTextField" default-binding="true">
+      <component id="1b5f0" class="javax.swing.JTextField" binding="writeWhetherYouWantTextField" default-binding="true">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
-          <text value="write weither you want to shoot, hide or reload. You can only shoot if you loaded before.But can´t load two times."/>
+          <text value="write whether you want to shoot, hide or reload. You can only shoot if you loaded before.But can´t load two times."/>
         </properties>
       </component>
       <component id="111c9" class="javax.swing.JLabel">

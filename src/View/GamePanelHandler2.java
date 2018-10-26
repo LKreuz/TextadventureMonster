@@ -15,7 +15,7 @@ public class GamePanelHandler2 {
     private JLabel action;
     private JLabel MonsterPower;
     private JLabel getloaded;
-    private JTextField writeWeitherYouWantTextField;
+    private JTextField writeWhetherYouWantTextField;
     private JLabel Level;
     private JLabel getMonsterPower;
     private JLabel mLoaded;

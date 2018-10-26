@@ -39,8 +39,7 @@ public class StartPanelHandler2 {
 
     private void startButton2pressed(){
         String name2 = name.getText();
-        String gender= choosePlayer.getText();
-        mainView2.play(name2,gender);
+        mainView2.play(name2);
     }
 }
 
