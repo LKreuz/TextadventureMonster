@@ -43,13 +43,17 @@ public abstract class Figure {
     public void setFight(int fight) {
         this.fight = fight;
     }
+
     public void setLoaded(boolean i){
         loaded=i;
     }
+
     public boolean getLoaded(){
         return loaded;
 
     }
+
+    public abstract void lose();
 }
 
 

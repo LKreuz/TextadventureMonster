@@ -61,5 +61,10 @@ public class Monster extends Figure {
     }
 
 
+    public void lose(){
+            System.out.println("Monster lost");
+
+    }
+
 }
 
