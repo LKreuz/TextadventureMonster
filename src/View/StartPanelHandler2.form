@@ -5,7 +5,10 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-11750838"/>
+      <enabled value="false"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="c6eaf" class="javax.swing.JTextField" binding="name">
