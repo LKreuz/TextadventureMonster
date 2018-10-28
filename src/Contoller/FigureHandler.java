@@ -18,7 +18,7 @@ public class FigureHandler {
     public void handleAction(String playerAction){
 
         String MonsterA= monster.randomAction();
-        if(playerAction.equals("shoot")&& player.getLoaded()&& MonsterA.equals("reload")){
+        if(playerAction.equals("shoot")&& player.getLoaded()&& !MonsterA.equals("hide")){
             monster.setVitality(monster.getVitality()-1);
             player.setLoaded(false);
 
