@@ -5,11 +5,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class StartPanelHandler1 {
-    private JTextField textField1;
+    private JTextField name;
     private JButton startButton;
-    private JButton button1;
-    private JButton button2;
-    private JSplitPane choosePlayer;
     private MainView1 mainView;
     private JPanel panel;
 
@@ -28,14 +25,14 @@ public class StartPanelHandler1 {
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                startGameClicked();
             }
         });
     }
 
 
     private void startGameClicked(){
-        String name = textField1.getText();
+        String name = this.name.getText();
         mainView.play(name);
     }
 }

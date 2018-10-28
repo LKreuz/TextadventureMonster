@@ -71,6 +71,7 @@ public class GamePanelHandler2 {
 
         }
     }
+
     public void updateGame(){
         gameUpdate.setText("you "+actionText.getText() +" and the monster "+ mainC.getMAction() );
 

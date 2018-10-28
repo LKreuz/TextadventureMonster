@@ -31,17 +31,17 @@
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="MonsterVitaililty"/>
+          <text value="MonsterPower"/>
         </properties>
       </component>
-      <component id="48433" class="javax.swing.JEditorPane" binding="editorPane1" default-binding="true">
+      <component id="48433" class="javax.swing.JEditorPane" binding="chooseWhetherYouWantEditorPane" default-binding="true">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
         <properties>
-          <text value=""/>
+          <text value="Choose whether you want to shoot, hide or reload.                                                                                                    You can only shoot if you loaded before.                                                                                                                    But can´t load two times."/>
         </properties>
       </component>
       <component id="a6632" class="javax.swing.JButton" binding="shootButton" default-binding="true">
@@ -81,7 +81,7 @@
           <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Vitilaty"/>
+          <text value="Power"/>
         </properties>
       </component>
       <component id="b3c84" class="javax.swing.JLabel">
@@ -89,10 +89,10 @@
           <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Level"/>
+          <text value="Loaded"/>
         </properties>
       </component>
-      <component id="ed917" class="javax.swing.JLabel" binding="MonsterName">
+      <component id="ed917" class="javax.swing.JLabel" binding="monsterName">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -100,7 +100,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="8372e" class="javax.swing.JLabel" binding="MonsterVitilaty">
+      <component id="8372e" class="javax.swing.JLabel" binding="getMonsterPower">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -108,7 +108,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="8a3ea" class="javax.swing.JLabel" binding="Name">
+      <component id="8a3ea" class="javax.swing.JLabel" binding="PlayerName">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -116,7 +116,7 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="3e3ec" class="javax.swing.JLabel" binding="Vitilaty">
+      <component id="3e3ec" class="javax.swing.JLabel" binding="playerPower">
         <constraints>
           <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -124,9 +124,25 @@
           <text value="Label"/>
         </properties>
       </component>
-      <component id="75bfb" class="javax.swing.JLabel" binding="Level">
+      <component id="75bfb" class="javax.swing.JLabel" binding="getLoaded">
         <constraints>
           <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Label"/>
+        </properties>
+      </component>
+      <component id="6c187" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="MonsterLoaded"/>
+        </properties>
+      </component>
+      <component id="f070d" class="javax.swing.JLabel" binding="mLoaded">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Label"/>

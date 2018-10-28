@@ -26,12 +26,10 @@ public class MainView1 extends JFrame {
     }
 
     public void play(String name){
-        mainController.createPlayer(name);
-
+        mainController.createFigureHandler(name);
         this.getContentPane().removeAll();
         this.getContentPane().invalidate();
-
-        //this.gamePanel = new GamePanelHandler1();
+        this.gamePanel = new GamePanelHandler1(name, mainController.getPlayerVitality(),mainController.getMonsterVitality(),mainController).getPanel2();
         this.getContentPane().add(gamePanel);
         this.getContentPane().revalidate();
 
