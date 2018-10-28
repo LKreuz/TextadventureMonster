@@ -13,7 +13,6 @@ public class GamePanelHandler1 {
     private JButton shootButton;
     private JButton hideButton;
     private JTextField moderator;
-    private JEditorPane chooseWhetherYouWantEditorPane;
     private JLabel monsterName;
     private JLabel getMonsterPower;
     private JLabel PlayerName;
