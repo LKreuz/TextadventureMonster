@@ -9,11 +9,22 @@ public class FigureHandler {
     private Monster monster;
     private String mAction;
 
+    /**
+     *
+     * @param player
+     * @param monster
+     */
+
     public FigureHandler(Player player, Monster monster){
         this.player = player;
         this.monster = monster;
         mAction="";
     }
+
+    /**
+     *
+     * @param playerAction
+     */
 
     public void handleAction(String playerAction){
 
@@ -39,10 +50,22 @@ public class FigureHandler {
 
 
     }
+
+    /**
+     *
+     * @param a
+     */
+
     public void setMonsterAction(String a){
          mAction= a;
 
     }
+
+    /**
+     *
+     * @return
+     */
+
     public String getmAction(){
         return mAction;
     }

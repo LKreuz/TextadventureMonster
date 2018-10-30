@@ -4,7 +4,6 @@ public abstract class Figure {
 
     protected String Name;
     protected int vitality;
-    protected int fight;
     protected boolean loaded;
 
     public Figure( int vitality) {
@@ -29,13 +28,7 @@ public abstract class Figure {
         this.vitality = vitality;
     }
 
-    public int getFight() {
-        return fight;
-    }
 
-    public void setFight(int fight) {
-        this.fight = fight;
-    }
 
     public void setLoaded(boolean i){
         loaded=i;

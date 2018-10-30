@@ -23,7 +23,14 @@ public class GamePanelHandler1 {
 
     private MainController mainC;
 
-
+    /**
+     * CreateButtins wird aufgerufen. MainController wird erstellt.
+     * Alle Label werden befüllt.
+     * @param name
+     * @param strength
+     * @param monsterPower
+     * @param mainC
+     */
     public GamePanelHandler1(String name, int strength,int monsterPower, MainController mainC) {
         createButtons();
         this.mainC= mainC;
@@ -37,6 +44,9 @@ public class GamePanelHandler1 {
 
     }
 
+    /**
+     * Je nachdem welcher Knopf gedrückt wird, wird ein String zur Überprüfung an actionText übergeben.
+     */
     public void createButtons(){
         reloadButton.addActionListener(new ActionListener() {
             @Override
@@ -67,6 +77,10 @@ public class GamePanelHandler1 {
         return panel2;
     }
 
+    /**
+     * Die Label werden geupdated, wenn Gewonnen oder Verloren wurde werden die Knöpfe ausgeschaltet.
+     */
+
     public void updatePower(){
         if(mainC.win()) {
             playerPower.setText(String.valueOf(mainC.getPlayerVitality()));
@@ -85,10 +99,19 @@ public class GamePanelHandler1 {
         }
     }
 
+    /**
+     * Der Moderator bekommt den Text was der Spieler und was der Computer gemacht haben übergeben.
+     */
+
     public void updateGame(){
         moderator.setText("You "+actionText +" and the monster "+ mainC.getMAction() );
 
     }
+
+    /**
+     *  Die aktion vom Spieler wird an den MainController übergeben die View wird geupdated, je nachdem wer gewonnen hat
+     *  wird dem Moderator ein Endtext übergeben.
+     */
 
     public void handleAction(){
         String answer= actionText;
