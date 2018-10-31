@@ -68,7 +68,7 @@ public class Monster extends Figure {
                 lostMessage[1]="The Monster lost!";
                 lostMessage[2]="You save the princess";
                 lostMessage[3]="You win!";
-                lostMessage[4]="You killed the monster";
+                lostMessage[0]="You killed the monster";
 
         int i = (int) (Math.random() * 4);
         return lostMessage[i];

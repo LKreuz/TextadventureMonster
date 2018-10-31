@@ -16,7 +16,7 @@ public class Player extends Figure {
         lostMessage[1]="The Monster wins!";
         lostMessage[2]="You lost";
         lostMessage[3]="You  can´t save the princess";
-        lostMessage[4]="The monster killed";
+        lostMessage[0]="The monster killed";
 
         int i = (int) (Math.random() * 4);
         return lostMessage[i];
