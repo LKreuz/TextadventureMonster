@@ -13,39 +13,36 @@ public class MainController {
     }
 
     /**
-     *
-     * @param name
-     * @return
+     * Mit dieser Methode wird der Spieler erschaffen.
+     * @param name - Name des Spielers
      */
 
     public Player createPlayer(String name) {
-        player = new Player( 2);
+        player = new Player(2);
         return player;
     }
 
     /**
-     *
-     * @return
+     * Mit dieser Methode wird der Gegner erschaffen.
      */
 
     public Monster createMonster() {
-        monster = new Monster( 2);
+        monster = new Monster(2);
         return monster;
     }
 
     /**
-     *
-     * @param playerName
+     * Mit dieser Methode wird ein Objekt der Klasse FigurHandler erschaffen, die viele Ablaufe regelt.
+     * Dem Objekt wird ein Spieler-Objekt übergeben, dass auch hier erstellt wird.
+     * @param playerName - Name des Spielers, wird in der Methode "createPlayer" benötigt.
      */
 
     public void createFigureHandler(String playerName){
-
-        figureHandler= new FigureHandler(createPlayer(playerName),createMonster());
+        figureHandler = new FigureHandler(createPlayer(playerName),createMonster());
     }
 
     /**
-     *
-     * @return
+     * Es folgen viele getter- und setter-Methoden.
      */
 
     public String getPlayerName() {
@@ -85,11 +82,19 @@ public class MainController {
 
     public String getMAction(){return figureHandler.getmAction();}
 
+    /**
+     * Es wird die Methode "handleAction" des FigureHandler aufgerufen und die Aktion des Spielers wird übergeben.
+     * @param playerAnswer - Aktion des Spielers
+     */
 
-    public void  answer(String playerAnswer){
+    public void answer(String playerAnswer){
         figureHandler.handleAction(playerAnswer);
 
     }
+
+    /**
+     * Diese Methode überprüft, ob man gewonnen oder verloren hat.
+     */
 
     public boolean win(){
         if (getMonsterVitality()==0) {

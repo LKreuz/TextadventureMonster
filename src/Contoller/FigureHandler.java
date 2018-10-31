@@ -9,27 +9,20 @@ public class FigureHandler {
     private Monster monster;
     private String mAction;
 
-    /**
-     *
-     * @param player
-     * @param monster
-     */
-
     public FigureHandler(Player player, Monster monster){
         this.player = player;
         this.monster = monster;
-        mAction="";
+        mAction = "";
     }
 
     /**
-     *
-     * @param playerAction
+     * Hier werden die Aktionen von Spieler und Monster gehandhabt.
+     * @param playerAction - Aktion des Spielers
      */
 
     public void handleAction(String playerAction){
-
-        String MonsterA= monster.randomAction();
-        if(playerAction.equals("shoot")&& player.getLoaded()&& !MonsterA.equals("hide")){
+        String MonsterA = monster.randomAction();
+        if(playerAction.equals("shoot")&& player.getLoaded() && !MonsterA.equals("hide")){
             monster.setVitality(monster.getVitality()-1);
             player.setLoaded(false);
 
@@ -38,32 +31,26 @@ public class FigureHandler {
             player.setVitality(player.getVitality()-1);
             monster.setLoaded(false);
         }
-        if(playerAction.equals("shoot")&& player.getLoaded() ){
+        if(playerAction.equals("shoot")&& player.getLoaded()){
             player.setLoaded(false);
-
         }
-         if (playerAction.equals("reload") && player.getLoaded()== false){
+         if (playerAction.equals("reload") && !player.getLoaded()){
             player.setLoaded(true);
         }
         System.out.println(MonsterA);
         setMonsterAction(MonsterA);
-
-
     }
 
     /**
-     *
-     * @param a
+     * setter-Methode
      */
 
     public void setMonsterAction(String a){
-         mAction= a;
-
+         mAction = a;
     }
 
     /**
-     *
-     * @return
+     * getter-Methode
      */
 
     public String getmAction(){
