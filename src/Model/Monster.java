@@ -62,10 +62,19 @@ public class Monster extends Figure {
     }
 
 
+    @Override
     public String lose(){
-            return "Monster lost! You win and save the princess";
+        String [] lostMessage= new String[4];
+                lostMessage[1]="The Monster lost!";
+                lostMessage[2]="You save the princess";
+                lostMessage[3]="You win!";
+                lostMessage[4]="You killed the monster";
+
+        int i = (int) (Math.random() * 4);
+        return lostMessage[i];
+        }
+
 
     }
 
-}
 
