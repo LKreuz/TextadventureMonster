@@ -40,6 +40,10 @@ public class GamePanelHandler2 {
 
 
     }
+
+    /**
+     *Die Buttons werden angelegt mit einem listener
+     */
     private void createButtons(){
         actionButton.addActionListener(new ActionListener() {
             @Override
@@ -50,12 +54,19 @@ public class GamePanelHandler2 {
 
     }
 
+    /**
+     * Das aktuelle Panel wird zurückgegeben
+     * @return panel2
+     */
     public JPanel getPanel2(){
         return panel2;
     }
 
 
-
+    /**
+     * Während des Spiels werden nach jeder Aktion die Labels geupdatet
+     * Aber nur wenn nicht schon einer gewonnen hat
+     */
     public void updatePower(){
         if(mainC.win()) {
             playerPower.setText(String.valueOf(mainC.getPlayerVitality()));
@@ -72,11 +83,19 @@ public class GamePanelHandler2 {
         }
     }
 
+    /**
+     * Der Text des Moderators wird geupdatet
+     */
     public void updateGame(){
         gameUpdate.setText("you "+actionText.getText() +" and the monster "+ mainC.getMAction() );
 
     }
 
+    /**
+     * nachdem eine Aktion ausgeführt wurde bze eingetippt wurde
+     * Was alles danach mit dieser Antwort passieren muss
+     * Das Panel wird geupdatet
+     */
     public void handleAction(){
         String answer= actionText.getText();
         mainC.answer(answer);

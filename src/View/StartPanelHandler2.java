@@ -22,10 +22,18 @@ public class StartPanelHandler2 {
 
     }
 
+    /**
+     * Aktuelles panel wird zurückgegeben
+     * @return panel
+     */
     public JPanel getPanel(){
         return panel;
     }
 
+    /**
+     * Listener wird für den Startbutton erstellt
+     * wenn dieser gedrückt wird dann wird startButton2pressed aufgerufen
+     */
     private void createButtons(){
         startButton2.addActionListener(new ActionListener() {
             @Override
@@ -37,6 +45,10 @@ public class StartPanelHandler2 {
     }
 
 
+    /**
+     * wird von createButtons aufgerufen
+     * und die Mainview wird aufgerufen damit das Spiel startet
+     */
     private void startButton2pressed(){
         String name2 = name.getText();
         mainView2.play(name2);
