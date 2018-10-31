@@ -2,13 +2,20 @@ package Model;
 
 public class Player extends Figure {
 
+//Attribut
     private boolean loaded;
 
+//Konstruktor
     public Player( int vitality) {
         super( vitality);
         loaded=false;
     }
 
+    /**Polymorphie
+     * abgänderte Mthodeo aus der Oberklasse
+     * zufälliger text wird angezeift wenn der Player verloren hatt
+     * @return
+     */
     @Override
     public String lose() {
 

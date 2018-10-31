@@ -1,8 +1,11 @@
 package Model;
 
 public class Monster extends Figure {
+
+//Attribut
     private boolean loaded;
 
+//Konstruktor
     public Monster(int Strength) {
         super(Strength);
         loaded = false;
@@ -10,6 +13,10 @@ public class Monster extends Figure {
 
     }
 
+    /**Array
+     * abwechslungsreiche Monsternamemn
+     * @return
+     */
     public String setMonstername() {
         String[] MN = new String[10];
         MN[0] = "Poisongolem";
@@ -27,6 +34,11 @@ public class Monster extends Figure {
         return MN[index];
     }
 
+    /**
+     * Methode
+     * es wird eine zufällige Action für Monster ausgewählt
+     * @return
+     */
     public int getRandomNumber(){
         int randomAction = (int) (Math.random() * 2);
         return randomAction;
@@ -61,20 +73,11 @@ public class Monster extends Figure {
         return new String ("action fehlgeschlagen");
     }
 
-
-    @Override
+//Polymorphie abgänderte Mthodeo aus der Oberklasse
     public String lose(){
-        String [] lostMessage= new String[4];
-                lostMessage[1]="The Monster lost!";
-                lostMessage[2]="You save the princess";
-                lostMessage[3]="You win!";
-                lostMessage[0]="You killed the monster";
-
-        int i = (int) (Math.random() * 4);
-        return lostMessage[i];
-        }
-
+            return "Monster lost! You win and save the princess";
 
     }
 
+}
 
