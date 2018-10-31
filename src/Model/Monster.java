@@ -13,7 +13,10 @@ public class Monster extends Figure {
 
     }
 
-//Array für abwechslungsreiche Monsternamemn
+    /**Array
+     * abwechslungsreiche Monsternamemn
+     * @return
+     */
     public String setMonstername() {
         String[] MN = new String[10];
         MN[0] = "Poisongolem";
@@ -31,7 +34,11 @@ public class Monster extends Figure {
         return MN[index];
     }
 
-//Methode sucht zufällige Action für Monster aus
+    /**
+     * Methode
+     * es wird eine zufällige Action für Monster ausgewählt
+     * @return
+     */
     public int getRandomNumber(){
         int randomAction = (int) (Math.random() * 2);
         return randomAction;

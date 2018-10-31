@@ -32,7 +32,10 @@ public abstract class Figure {
     }
 
 
-//Methode zum nachladen vor dem Schiesen
+    /**Methode zum nachladen vor dem Schiesen
+     *
+     * @param i
+     */
     public void setLoaded(boolean i){
         loaded=i;
     }
@@ -42,7 +45,7 @@ public abstract class Figure {
 
     }
 
-/*Polymorphie
+/**Polymorphie
  Mthode zum Anzeigen eines Textes jenachdem wer verliert
  */
     public abstract String lose();

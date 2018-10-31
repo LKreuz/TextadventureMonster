@@ -11,7 +11,11 @@ public class Player extends Figure {
         loaded=false;
     }
 
-//Polymorphie abgänderte Mthodeo aus der Oberklasse
+    /**Polymorphie
+     * abgänderte Mthodeo aus der Oberklasse
+     * zufälliger text wird angezeift wenn der Player verloren hatt
+     * @return
+     */
     @Override
     public String lose() {
 
