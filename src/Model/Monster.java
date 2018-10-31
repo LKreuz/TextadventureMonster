@@ -1,11 +1,8 @@
 package Model;
 
 public class Monster extends Figure {
-
-//Attribut
     private boolean loaded;
 
-//Konstuktor
     public Monster(int Strength) {
         super(Strength);
         loaded = false;
@@ -13,7 +10,6 @@ public class Monster extends Figure {
 
     }
 
-//Array für verschiede Monsternamen
     public String setMonstername() {
         String[] MN = new String[10];
         MN[0] = "Poisongolem";
@@ -31,10 +27,6 @@ public class Monster extends Figure {
         return MN[index];
     }
 
-/*
-Methode sucht zufällige Action für Monster
- zwischen nachladen, schiesen und vestecken aus
-    */
     public int getRandomNumber(){
         int randomAction = (int) (Math.random() * 2);
         return randomAction;
@@ -69,7 +61,7 @@ Methode sucht zufällige Action für Monster
         return new String ("action fehlgeschlagen");
     }
 
-//Polymorphie abgänderte Mthodeo aus der Oberklasse
+
     public String lose(){
             return "Monster lost! You win and save the princess";
 

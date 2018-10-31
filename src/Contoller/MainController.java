@@ -29,7 +29,7 @@ public class MainController {
      */
 
     public Monster createMonster() {
-        monster = new Monster( 2);
+        monster = new Monster( 3);
         return monster;
     }
 

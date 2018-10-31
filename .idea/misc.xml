@@ -7,5 +7,5 @@
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/out" />
     <option name="OPTION_SCOPE" value="private" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="10" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="9" project-jdk-type="JavaSDK" />
 </project>
