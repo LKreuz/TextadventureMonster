@@ -34,7 +34,8 @@ public abstract class Figure {
 
     /**Methode zum nachladen vor dem Schiesen
      *
-     * @param i
+     * @param i parameter wird entweder mit true oder false übergeben
+     *          Attribut loaded wird zum übergebenen Wahrheitswert
      */
     public void setLoaded(boolean i){
         loaded=i;
@@ -46,7 +47,7 @@ public abstract class Figure {
     }
 
 /**Polymorphie
- Mthode zum Anzeigen eines Textes jenachdem wer verliert
+ Methode zum Anzeigen eines Textes jenachdem wer verliert
  */
     public abstract String lose();
 }

@@ -15,7 +15,7 @@ public class Monster extends Figure {
 
     /**Array
      * abwechslungsreiche Monsternamemn
-     * @return
+     * @returnausgewählter Monstername
      */
     public String setMonstername() {
         String[] MN = new String[10];
@@ -36,13 +36,18 @@ public class Monster extends Figure {
 
     /**
      * Methode
-     * es wird eine zufällige Action für Monster ausgewählt
+     * es wird eine zufällige Nummer  für die Action des  Monster ausgewählt
      * @return
      */
     public int getRandomNumber(){
         int randomAction = (int) (Math.random() * 2);
         return randomAction;
     }
+
+    /**
+     * eine Zufällige Action wird für das Monster ausgewählt mit dem vorher zufällig bestimmten Wert
+     * @return String der Action des Monsters
+     */
     public String randomAction() {
        int i= getRandomNumber();
 
@@ -73,11 +78,24 @@ public class Monster extends Figure {
         return new String ("action fehlgeschlagen");
     }
 
-//Polymorphie abgänderte Mthodeo aus der Oberklasse
+    /** Polymorphie abgänderte Mthodeo aus der Oberklasse
+     *  Zufällige Message beim verlieren des Monsters wird ermittelt aus 4 verschiedenen
+     * @return ausgewählte Message
+     */
     public String lose(){
-            return "Monster lost! You win and save the princess";
 
+            String [] lostMessage= new String[4];
+            lostMessage[1]="The monster lost!";
+            lostMessage[2]="You win";
+            lostMessage[3]="You save the princess";
+            lostMessage[0]="You killed the monster";
+
+            int i = (int) (Math.random() * 4);
+            return lostMessage[i];
+        }
     }
 
-}
+
+
+
 

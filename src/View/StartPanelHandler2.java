@@ -16,6 +16,12 @@ public class StartPanelHandler2 {
     private JLabel choose;
     private JLabel start;
 
+    /**
+     * Konstruktor dieer Klasse
+     * interne Methode createButtons wird auf gerufen
+     * lernt MainView2 kennen
+     * @param mainView2 Referenz zur MainView
+     */
     public StartPanelHandler2(MainView2 mainView2) {
         createButtons();
         this.mainView2 = mainView2;
@@ -31,7 +37,7 @@ public class StartPanelHandler2 {
     }
 
     /**
-     * Listener wird für den Startbutton erstellt
+     * ActionListener wird für den Startbutton erstellt
      * wenn dieser gedrückt wird dann wird startButton2pressed aufgerufen
      */
     private void createButtons(){

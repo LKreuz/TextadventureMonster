@@ -25,6 +25,17 @@ public class GamePanelHandler2 {
 
     private MainController mainC;
 
+    /**
+     * Konstruktor der Klasse
+     * Methode createButtons wird aufegrufen
+     * lernt den MainCintroller kennen
+     * Texte der Labels auf dem Panel werden festgelegt  mit den übergebenen Werten
+     * diese werden dann auch nocheinmal aktualisiert damit sie auch noch stimmen
+     * @param name Name des Spielers wird übergeben und in ein Panel geschrieben
+     * @param strength Stärke bzw Power des Spielers wird übergeben und "
+     * @param monsterPower Power des Monsters wird übergteben und "
+     * @param mainC MainController wird beim erstellen übergeben damit er gekannt werden kann
+     */
 
     public GamePanelHandler2(String name, int strength,int monsterPower, MainController mainC){
         createButtons();
@@ -42,7 +53,7 @@ public class GamePanelHandler2 {
     }
 
     /**
-     *Die Buttons werden angelegt mit einem listener
+     *Die Buttons werden angelegt und bekommen einen Actionlistener
      */
     private void createButtons(){
         actionButton.addActionListener(new ActionListener() {
@@ -64,7 +75,7 @@ public class GamePanelHandler2 {
 
 
     /**
-     * Während des Spiels werden nach jeder Aktion die Labels geupdatet
+     * Während des Spiels werden nach jeder Aktion die Labels vom Monster und vom Player geupdatet
      * Aber nur wenn nicht schon einer gewonnen hat
      */
     public void updatePower(){
@@ -92,7 +103,7 @@ public class GamePanelHandler2 {
     }
 
     /**
-     * nachdem eine Aktion ausgeführt wurde bze eingetippt wurde
+     * nachdem eine Aktion ausgeführt wurde bzw eingetippt wurde
      * Was alles danach mit dieser Antwort passieren muss
      * Das Panel wird geupdatet
      */

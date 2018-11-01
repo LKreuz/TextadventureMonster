@@ -15,6 +15,7 @@ public class MainController {
     /**
      * Mit dieser Methode wird der Spieler erschaffen.
      * @param name - der Name des Sielers
+     *  das erstellte Spielerobjekt wird zurückgegeben
      */
 
     public Player createPlayer(String name) {
@@ -23,7 +24,7 @@ public class MainController {
     }
 
     /**
-     * Mit dieser Methode wird der Spieler erschaffen.
+     * Mit dieser Methode wird das Monster erschaffen.
      */
 
     public Monster createMonster() {
@@ -42,6 +43,7 @@ public class MainController {
 
     /**
      * Es folgen viele getter- und setter- Methoden.
+     * der unterschiedlichen attribute vom Monster und vom Player
      */
 
     public String getPlayerName() {
